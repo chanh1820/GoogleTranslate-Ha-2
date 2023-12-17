@@ -2,12 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.googletranslate">
+
     <queries>
         <intent>
             <action android:name="android.intent.action.TTS_SERVICE" />
         </intent>
     </queries>
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,11 +21,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoogleTranslate"
         tools:targetApi="31">
-
+        <activity
+            android:name=".view.main.vocabulary.MainVocabularyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.dich.MainDichActivity"
+            android:exported="false" />
         <activity
             android:name=".view.doctienganh.DocNgonNguActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".view.dichnhieungonngu.DichNhieuNgonNguActivity"
             android:exported="false" />
@@ -42,6 +49,7 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
         <activity
             android:name=".view.trochoi.ghepthe.GhepTheActivity"
             android:exported="false" />
@@ -68,9 +76,7 @@
         <activity
             android:name=".view.maintrochoi.MainTroChoiActivity"
             android:exported="false"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait" />
     </application>
-
 
 </manifest>

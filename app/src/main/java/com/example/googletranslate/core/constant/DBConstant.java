@@ -1,6 +1,7 @@
 package com.example.googletranslate.core.constant;
 
 import com.example.googletranslate.R;
+import com.example.googletranslate.core.dto.ClassRoomDTO;
 import com.example.googletranslate.core.dto.LanguageDTO;
 import com.example.googletranslate.core.dto.MutilLanguageResponseDTO;
 import com.example.googletranslate.core.dto.UnitDTO;
@@ -21,7 +22,13 @@ public class DBConstant {
             add(new LanguageDTO(1, "Tiếng Nga", "ru", "ru_RU",R.drawable.ic_flag_rusia));
             add(new LanguageDTO(1, "Tiếng Trung", "zh-TW","zh_CN", R.drawable.ic_flag_china));
         }};
+    public static final List<ClassRoomDTO> CLASS_ROOM_DTO_LIST = new ArrayList<ClassRoomDTO>() {{
+        add(new ClassRoomDTO(1, "6", "Lớp 6"));
+        add(new ClassRoomDTO(2, "7", "Lớp 7"));
+        add(new ClassRoomDTO(3, "8", "Lớp 8"));
+        add(new ClassRoomDTO(4, "9", "Lớp 9"));
 
+    }};
     public static final Map<String, LanguageDTO> LANGUAGE_DTO_MAP = new HashMap<String, LanguageDTO>() {{
         for (LanguageDTO item : LANGUAGE_DTO_LIST) {
             put(item.getLanguageCode(), item);
