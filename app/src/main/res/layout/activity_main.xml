@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/stylde_gadient_1"
+    tools:context="com.example.googletranslate.view.main.MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:padding="4dp">
+        <TextClock
+            android:text="Thu 12:12:02 00:00:00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16sp"
+            android:background="@drawable/style_edt_text_1"
+            android:id="@+id/textclock"
+            android:layout_gravity="center_horizontal"
+            android:format24Hour="E, d-M-yyyy k:m:sa"
+            android:format12Hour="k:m:sa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="152dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="30dp">
+
+            <Button
+                android:id="@+id/btn_dich_ngon_ngu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:drawableLeft="@drawable/ic_translate"
+                android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+                android:gravity="left|center_vertical"
+                android:text="Dịch ngôn ngữ"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dich_nhieu_ngon_ngu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:paddingVertical="8dp"
+
+                android:backgroundTint="@android:color/holo_green_light"
+                android:drawableLeft="@drawable/ic_translate_muti_language"
+                android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+                android:gravity="left|center_vertical"
+                android:text="Dịch nhiều ngôn ngữ"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_doc_tieng_anh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:paddingVertical="8dp"
+
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:drawableLeft="@drawable/ic_speak"
+                android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+                android:gravity="left|center_vertical"
+                android:text="Đọc tiếng anh"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <Button
+                android:backgroundTint="@color/holo_orange_9"
+                android:gravity="left|center_vertical"
+                android:id="@+id/btn_tu_vung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:paddingVertical="8dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_baseline_translate_24"
+                android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+                android:text="Từ vựng"/>
+            <Button
+                android:id="@+id/btn_tro_choi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:paddingVertical="8dp"
+
+                android:backgroundTint="@color/holo_purple_13"
+                android:drawableLeft="@drawable/ic_play_game"
+                android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+                android:gravity="left|center_vertical"
+                android:text="Trò chơi"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

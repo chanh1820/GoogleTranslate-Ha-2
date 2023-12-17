@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.trochoi.chinhta.ChinhTaActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:id="@+id/tv_chinh_ta_index"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="1/7"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imv_chinh_ta_volume"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_volume_up_24"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:id="@+id/edt_chinh_ta_input"
+        android:hint="Nhập những gì bạn nghe thấy"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_chinh_ta_check"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/trang_mo"
+        android:background="@drawable/style_radius_4"
+        android:text="Kiểm tra" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Định nghĩa"
+            android:textSize="18sp"
+            android:textColor="#756565"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginVertical="8dp"
+            android:textSize="24sp"
+            android:id="@+id/tv_chinh_ta_suggest_content"
+            android:textColor="@color/black"
+            android:text="(n): chăm sóc trẻ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imv_chinh_ta_suggest_image"
+        android:layout_width="320dp"
+        android:layout_height="190dp"
+        android:scaleType="fitCenter"
+        android:layout_margin="16dp"
+        android:src="@drawable/image_1" />
+</LinearLayout>

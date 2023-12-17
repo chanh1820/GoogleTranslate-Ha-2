@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    tools:context=".view.trochoi.hoc.HocActivity">
+    <LinearLayout
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/style_radius_trang_sang"
+        android:orientation="vertical">
+        <TextView
+            android:text="  Học"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_grid_view_24"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Định nghĩa"
+            android:textSize="18sp"
+            android:textColor="#756565"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginVertical="8dp"
+            android:textSize="24sp"
+            android:id="@+id/tv_hoc_example_viet"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="(n): chăm sóc trẻ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/img_hoc_image"
+        android:layout_width="320dp"
+        android:layout_height="190dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/image_1" />
+    <RadioGroup
+        android:id="@+id/rad_group_hoc"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp">
+
+        <RadioButton
+            android:id="@+id/rad_hoc_a"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:checked="false"
+            android:button="@drawable/style_radio_button_1"
+            android:background="@drawable/style_radio_button_1"
+
+            android:text="Trả lời 1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rad_hoc_b"
+            android:padding="12dp"
+            android:button="@drawable/style_radio_button_1"
+            android:background="@drawable/style_radio_button_1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:checked="false"
+            android:text="Trả lời 2"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rad_hoc_c"
+            android:padding="12dp"
+            android:button="@drawable/style_radio_button_1"
+            android:background="@drawable/style_radio_button_1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:text="Trả lời 3"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rad_hoc_d"
+            android:padding="12dp"
+            android:button="@drawable/style_radio_button_1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:background="@drawable/style_radio_button_1"
+
+            android:layout_marginVertical="4dp"
+            android:text="Trả lời 4"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+    <Button
+        android:background="@drawable/style_radius_4"
+        android:layout_width="wrap_content"
+        android:text="Câu tiếp theo"
+        android:id="@+id/btn_hoc_next"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/ic_baseline_arrow_right_alt_24"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

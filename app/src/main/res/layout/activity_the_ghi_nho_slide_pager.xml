@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:background="@color/trang_mo"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/style_radius_trang_sang"
+        android:orientation="vertical">
+        <TextView
+            android:text="  Thẻ ghi nhớ"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_baseline_bookmarks_24"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="12/20"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_item_the_ghi_nho_position"/>
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp2_the_ghi_nho"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="8dp"
+        android:layout_weight="10"
+        android:background="@drawable/style_radius_trang_sang" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+            <Button
+                android:id="@+id/tv_item_the_ghi_nho_back"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:background="@drawable/ic_baseline_arrow_circle_left_24"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:id="@+id/tv_item_the_ghi_nho_next"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:background="@drawable/ic_baseline_arrow_circle_right_24"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

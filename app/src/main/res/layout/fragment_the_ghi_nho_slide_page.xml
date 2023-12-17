@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ln_theghinho_parent"
+    android:background="@drawable/style_radius_trang_sang"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/imb_the_ghi_nho_volume"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_margin="8dp"
+        android:background="@drawable/ic_baseline_volume_up_24"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ln_theghinho_content"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/tv_item_the_ghi_nho_image"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="16dp" />
+
+    <TextView
+        android:id="@+id/tv_item_the_ghi_nho_example_viet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:text="(n): đại gia đình"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="extended family"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/tv_item_the_ghi_nho_vocabulary_eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+</LinearLayout>

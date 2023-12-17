@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.googletranslate">
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GoogleTranslate"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".view.doctienganh.DocNgonNguActivity"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".view.dichnhieungonngu.DichNhieuNgonNguActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.dichngonngu.DichNgonNguActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <activity
+            android:name=".view.trochoi.ghepthe.GhepTheActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.trochoi.chinhta.ChinhTaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.trochoi.kiemtra.KiemTraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.trochoi.viet.VietActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.trochoi.hoc.HocActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.trochoi.theghinho.TheGhiNhoSlidePagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.trochoi.listvocabulary.ListVocabularyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.maintrochoi.MainTroChoiActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+
+</manifest>
