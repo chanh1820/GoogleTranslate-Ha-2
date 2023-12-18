@@ -58,9 +58,9 @@
                 android:paddingVertical="8dp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:textSize="16sp"                android:padding="12dp"
-
-                android:drawableLeft="@drawable/ic_baseline_translate_24"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:drawableLeft="@drawable/ic_translate_2"
                 android:drawableRight="@drawable/ic_baseline_chevron_right_24"
                 android:text="Từ vựng"/>
             <Button
