@@ -23,7 +23,7 @@ public class GeneralDAO {
     public List<VocabularyDTO> findVocabularyByUnit(Integer unitId) {
         List<VocabularyDTO> result = new ArrayList<>();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
-        String sql = "SELECT * FROM vocabulary_tbl WHERE unit_id = '"+ unitId +"'";
+        String sql = "SELECT * FROM vocabulary_tbl WHERE unit_id = '"+ unitId +"' LIMIT 40";
         Log.e("sql", sql);
         Cursor cursor = db.rawQuery(sql, null);
         if (cursor != null) {

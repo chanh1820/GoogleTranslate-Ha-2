@@ -45,7 +45,9 @@ public class ObjectMapperUtils {
     }
 
     public static <D, T> D dtoToMap(final Object dto, TypeReference<Map<String, String>> outClass) {
-            return (D) objectMapper.convertValue(dto, outClass);
+        Log.e("dtoToMap", ObjectMapperUtils.dtoToString(dto));
+
+        return (D) objectMapper.convertValue(dto, outClass);
     }
 
 

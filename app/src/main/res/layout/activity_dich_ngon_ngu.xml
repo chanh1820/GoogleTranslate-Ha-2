@@ -67,6 +67,7 @@
             android:textColor="@color/purple_500"
             android:textSize="20sp"
             android:textStyle="bold" />
+
         <EditText
             android:id="@+id/edt_dich_ngon_ngu_result"
             android:layout_width="match_parent"

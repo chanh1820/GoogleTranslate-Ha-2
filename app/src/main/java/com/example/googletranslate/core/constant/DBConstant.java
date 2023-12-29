@@ -21,7 +21,8 @@ public class DBConstant {
             add(new LanguageDTO(1, "Tiếng Hàn", "ko","ko_KR", R.drawable.ic_flag_south_korea));
             add(new LanguageDTO(1, "Tiếng Nga", "ru", "ru_RU",R.drawable.ic_flag_rusia));
             add(new LanguageDTO(1, "Tiếng Trung", "zh-TW","zh_CN", R.drawable.ic_flag_china));
-        }};
+            add(new LanguageDTO(1, "Tiếng Thái", "th","th-TH", R.drawable.ic_flag_china));
+    }};
     public static final List<ClassRoomDTO> CLASS_ROOM_DTO_LIST = new ArrayList<ClassRoomDTO>() {{
         add(new ClassRoomDTO(1, "6", "Lớp 6"));
         add(new ClassRoomDTO(2, "7", "Lớp 7"));
