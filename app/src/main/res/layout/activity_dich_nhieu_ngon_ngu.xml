@@ -32,16 +32,17 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_dich_nhieu_ngon_ngu_tranlate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/holo_orange_light"
-        android:text="Dịch"
-        android:textSize="20sp"
-        android:layout_marginTop="8dp"
-        android:id="@+id/btn_dich_nhieu_ngon_ngu_tranlate"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:drawableRight="@drawable/baseline_translate_24"
+        android:text="Dịch"
         android:textColor="@color/white"
-        android:drawableRight="@drawable/baseline_translate_24"/>
+        android:textSize="20sp" />
+
     <ListView
         android:id="@+id/lv_dich_nhieu_ngon_ngu"
         android:layout_width="match_parent"

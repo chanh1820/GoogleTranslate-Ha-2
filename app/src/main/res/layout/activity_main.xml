@@ -50,35 +50,38 @@
             android:padding="30dp">
 
             <Button
-                android:backgroundTint="@color/holo_red_8"
-                android:gravity="left|center_vertical"
                 android:id="@+id/btn_hoc_tap"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="4dp"
-                android:paddingVertical="8dp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:padding="12dp"
+                android:backgroundTint="@color/holo_red_8"
                 android:drawableLeft="@drawable/ic_book"
                 android:drawableRight="@drawable/ic_baseline_chevron_right_24"
-                android:text="Học tập"/>
-            <Button
-                android:backgroundTint="@color/holo_orange_7"
                 android:gravity="left|center_vertical"
+                android:padding="12dp"
+                android:paddingVertical="8dp"
+                android:text="Học tập"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
                 android:id="@+id/btn_dich"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="4dp"
-                android:paddingVertical="8dp"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="16sp"                android:padding="12dp"
-
+                android:backgroundTint="@color/holo_orange_7"
                 android:drawableLeft="@drawable/ic_language_learning"
                 android:drawableRight="@drawable/ic_baseline_chevron_right_24"
-                android:text="Dịch"/>
+                android:gravity="left|center_vertical"
+                android:padding="12dp"
+                android:paddingVertical="8dp"
+                android:text="Dịch"
+
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <Button
                 android:id="@+id/btn_doc_tieng_anh"
                 android:layout_width="match_parent"

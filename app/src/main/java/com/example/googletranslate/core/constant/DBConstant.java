@@ -14,7 +14,7 @@ import java.util.Map;
 public class DBConstant {
 
     public static final List<LanguageDTO> LANGUAGE_DTO_LIST = new ArrayList<LanguageDTO>() {{
-            add(new LanguageDTO(1, "Tiếng Anh", "en","en_IN", R.drawable.ic_flag_vietnam));
+            add(new LanguageDTO(1, "Tiếng Anh", "en","en_IN", R.drawable.ic_flag_united_kingdom));
             add(new LanguageDTO(1, "Tiếng Pháp", "fr","fr_FR", R.drawable.ic_flag_france));
             add(new LanguageDTO(1, "Tiếng Đức", "de","de_DE", R.drawable.ic_flag_germany));
             add(new LanguageDTO(1, "Tiếng Nhật", "ja","ja_JP", R.drawable.ic_flag_japan));

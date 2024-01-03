@@ -124,7 +124,7 @@
                 android:drawableRight="@drawable/ic_baseline_chevron_right_24"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:text="  Ghép the"/>
+                android:text="  Ghép thẻ"/>
         </LinearLayout>
         <LinearLayout
             android:gravity="center"

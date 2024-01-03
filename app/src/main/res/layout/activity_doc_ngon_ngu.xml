@@ -42,16 +42,17 @@
             android:layout_width="8dp"
             android:layout_height="wrap_content"
             />
+
         <Button
+            android:id="@+id/btn_doc_ngon_ngu_speech"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:backgroundTint="@android:color/holo_orange_light"
-            android:text="Đọc"
+            android:drawableRight="@drawable/baseline_record_voice_over_24"
             android:gravity="center"
-            android:textSize="20sp"
-            android:id="@+id/btn_doc_ngon_ngu_speech"
+            android:text="Đọc"
             android:textColor="@color/white"
-            android:drawableRight="@drawable/baseline_record_voice_over_24"/>
+            android:textSize="20sp" />
     </LinearLayout>
 
 </LinearLayout>
