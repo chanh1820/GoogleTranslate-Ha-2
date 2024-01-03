@@ -37,6 +37,9 @@
             android:name=".view.dichngonngu.DichNgonNguActivity"
             android:exported="false" />
         <activity
+            android:name=".view.phanhoi.PhanHoiActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.main.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -58,6 +61,9 @@
             android:exported="false" />
         <activity
             android:name=".view.trochoi.kiemtra.KiemTraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.trochoi.kiemtra.ResultKiemTraActivity"
             android:exported="false" />
         <activity
             android:name=".view.trochoi.viet.VietActivity"

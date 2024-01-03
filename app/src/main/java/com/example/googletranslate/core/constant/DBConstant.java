@@ -30,6 +30,9 @@ public class DBConstant {
         add(new ClassRoomDTO(4, "9", "Lớp 9"));
 
     }};
+
+    public static final String FEED_BACK_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSeWswMFauPlm1A9eHTG5hL0rvKmOvdoVdAEq3fb6FUdEkeIqw/viewform";
+
     public static final Map<String, LanguageDTO> LANGUAGE_DTO_MAP = new HashMap<String, LanguageDTO>() {{
         for (LanguageDTO item : LANGUAGE_DTO_LIST) {
             put(item.getLanguageCode(), item);
@@ -68,4 +71,5 @@ public class DBConstant {
     }};
     public static final String FILE_MP3 = ".mp3";
     public static final String USER_NAME = "ha_vocabularyplay@gmail.com";
+
 }

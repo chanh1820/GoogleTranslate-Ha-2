@@ -3,6 +3,7 @@ package com.example.googletranslate.view.trochoi.kiemtra;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -100,6 +101,7 @@ public class KiemTraActivity extends FragmentActivity {
 
 
         txtKiemTra = findViewById(R.id.tvKiemTra);
+        tvXemDiem = findViewById(R.id.tvScore);
         tvTimer = findViewById(R.id.tvTimer);
         tvBack = findViewById(R.id.tv_back);
         txtCurrentPosition = findViewById(R.id.txtCurentPosition);
@@ -116,6 +118,15 @@ public class KiemTraActivity extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 checkAnswer();
+            }
+        });
+        tvXemDiem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                Intent intent1 = new Intent(KiemTraActivity.this, ResultKiemTraActivity.class);
+                intent1.putExtra("arr_Ques", questionP4DTOList);
+                startActivity(intent1);
             }
         });
     }
@@ -289,20 +300,4 @@ public class KiemTraActivity extends FragmentActivity {
     }
 
 
-    // Phương thức xoa database viết vào hàm MainActivity
-    //        try {
-//            db.deleteDataBase();
-//            Toast.makeText(this, "Xóa thành công", Toast.LENGTH_SHORT).show();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//            Toast.makeText(this, "bi loi rui", Toast.LENGTH_SHORT).show();
-//        }
-
-    public String convertSecondToMinute(String number) {
-        int n = Integer.parseInt(number);
-        int minute, second;
-        minute = n % 3660 / 60;
-        second = n % 3600 % 60;
-        return String.valueOf(minute + ":" + second);
-    }
 }

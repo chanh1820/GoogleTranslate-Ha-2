@@ -22,6 +22,7 @@ import com.example.googletranslate.core.dto.ClassRoomDTO;
 import com.example.googletranslate.view.doctienganh.DocNgonNguActivity;
 import com.example.googletranslate.view.main.dich.MainDichActivity;
 import com.example.googletranslate.view.main.vocabulary.MainVocabularyActivity;
+import com.example.googletranslate.view.phanhoi.PhanHoiActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -30,7 +31,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnDich, btnDocTiengAnh,btnHoc;
+    Button btnDich, btnDocTiengAnh,btnHoc, btnPhanHoi;
 
     ChooseClassAdapter chooseClassAdapter;
     @Override
@@ -93,6 +94,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnPhanHoi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PhanHoiActivity.class);
+                intent.putExtra(KeyConstants.INTENT_LINK, DBConstant.FEED_BACK_LINK);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initView() {
@@ -105,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
         btnHoc = findViewById(R.id.btn_hoc_tap);
         btnDich = findViewById(R.id.btn_dich);
         btnDocTiengAnh = findViewById(R.id.btn_doc_tieng_anh);
+        btnPhanHoi = findViewById(R.id.btn_phan_hoi);
     }
     private void firebase() {
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();

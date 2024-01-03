@@ -1,6 +1,8 @@
 package com.example.googletranslate.core.dto;
 
-public class QuestionP4DTO {
+import java.io.Serializable;
+
+public class QuestionP4DTO implements Serializable {
 
     private String id;
 
