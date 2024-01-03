@@ -77,7 +77,6 @@ public class KiemTraActivity extends FragmentActivity {
         unitId = getIntent().getIntExtra(KeyConstants.INTENT_UNIT_ID, 0);
         listVocabulary = generalDAO.findVocabularyByUnit(unitId);
         questionP4DTOList = TranformerUtils.convertVocabulariesToQuestionP4s(listVocabulary);
-        questionP4DTOList.addAll(questionP4DTOList);
         Collections.shuffle(questionP4DTOList);
         totalQuestion = questionP4DTOList.size();
         Log.e("questionP4DTOList.size()",String.valueOf(questionP4DTOList.size()));
