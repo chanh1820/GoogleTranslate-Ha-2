@@ -47,10 +47,10 @@ public class VietActivity extends AppCompatActivity {
                 tvIgnore.setVisibility(View.INVISIBLE);
                 tvNotify.setVisibility(View.VISIBLE);
                 if(input.equals(listVocabulary.get(position).getVocabularyEng())){
-                    tvNotify.setText("Chính sác");
+                    tvNotify.setText("Chính xác");
                     tvNotify.setTextColor(Color.GREEN);
                 }else{
-                    tvNotify.setText("Không chính sác");
+                    tvNotify.setText("Không chính xác");
                     tvNotify.setTextColor(Color.RED);
                 }
             }
