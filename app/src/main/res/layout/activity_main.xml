@@ -27,6 +27,13 @@
             android:format12Hour="k:m:sa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/truong" />
+
     </LinearLayout>
 
     <LinearLayout
